@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Banking Deposit Demo</title>
+<!--Internal JavaScript -->
+<script>
+  function DepositInternal() {
+   document.getElementById("internalOutput").innerHTML=
+"6,000 has been successfully deposited to your account. (Internal JavaScript)";
+}
+</script>
+</head>
+<body>
+ <h2>Banking Deposit Simulation</h2>
+
+ <!--Internal JS Example-->
+ <button onclick="DepositInternal()">Deposit via Internal Script</button>
+ <p id="internalOutput" style="color: blue; font-weight: bold;"></p>
+
+<!--External JS Example-->
+<button onclick="DepositExternal()">Deposit via External Script</button>
+<p id="externalOutput" style="color: green; font-weight: bold;"></p>
+<!--Linking external JavaScript file-->
+<script src="banking.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internal & External JS Demo</title>
+<!--Internal JavaScript -->
+<script>
+  function showInternal() {
+   document.getElementById("internalOutput").innerHTML=
+"Welcome to Aditya University - This message is from Internal JavaScript.";
+}
+</script>
+</head>
+<body>
+ <h2>Internal & External JavaScript Example</h2>
+ <!--Internal JS Example-->
+ <button onclick="showInternal()">Run Internal Script</button>
+ <p id="internalOutput" style="color: blue; font-weight: bold;"></p>
+
+<!--External JS Example-->
+<button onclick="showExternal()">Run External Script</button>
+<p id="externalOutput" style="color: green; font-weight: bold;"></p>
+<!--Linking external JavaScript file-->
+<script src="college.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Aditya University - CSS combinator selectors</title>
+<style>
+/* descendant selector div p=selects all <p>  tags inside a <div > */
+div p{
+   color: green;
+}
+div > p {
+   fon-weight: bold;
+color: blue;
+}
+h2+ p {
+ background-color: yellow;
+}
+h3 ~ p {
+   color: red;
+}
+</style>
+</head>
+<body>
+<h1 id="university-name">Aditya university</h1>
+<h2> About Us </h2>
+<p>Aditya University is known forqulity education and research excellence.</p>
+<!-- Adjacent sibiliingrule applies here (yellow background)-->
+<h3>Departments</h3>
+<p>engineering</p>
+<!--General sibiling rule applies (red)-->
+<p>pharmacy</p>
+<div>
+<p>This is a direct child paragraph inside div (blue +bold due to child selector).</p>
+<selection>
+<p>This is a inside a section inside div (green due to descendent selector).</p>
+</selection>
+</div>
+</body>
+</html>
+
